@@ -1,0 +1,544 @@
+body, html{
+    margin: 0;
+    padding: 0;
+}
+
+/*обертка верстки*/
+
+.wrapper{
+    background: #f2f2f2;
+    max-width: 100%;
+    padding: 2px;
+    margin: auto;
+}
+
+/*Header*/
+
+.header .img_head{
+    height: 70px;
+    background-image: url("Pictures/baner.jpg");
+ }
+
+
+/* меню основное */
+
+
+.top-menu{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    background: #144ab6;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+
+.top-menu li a{
+    color: #ffffff;
+    padding: 12px 22px 12px 22px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 22px;
+    display: block;
+}
+
+.top-menu li:hover{
+    background: #113887;
+}
+
+.top-menu li ul{
+    display: none;
+}
+
+.top-menu li:hover ul{
+    display: block;
+    z-index: 1;
+}
+/* вложенное меню */
+
+#kind{
+    background: #144ab6;
+    border-radius: 9px;
+    text-decoration: none;
+    list-style: none;
+    position: absolute;
+    top: 50px;
+    padding: 2px;
+}
+
+#kind li{
+    border-radius: 3px;
+}
+
+#kind a{
+   font-size: 16px;
+}
+
+#kind li:hover {
+    background: #113887;
+}
+
+/* конейнер */
+
+.container{
+    display: flex;
+    padding: 10px 0 10px;
+}
+
+/* Сайтбар */
+
+.sidebar{
+    word-wrap: break-word;
+    flex: 0 0 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.sidebar-menu{
+    background: #144ab6;
+    padding: 0;
+
+
+    list-style: none;
+}
+
+
+.sidebar-menu li{
+    border-bottom: 1px solid #e3d8da;
+}
+
+.sidebar-menu li a{
+    color: #ffffff;
+    font-size: 18px;
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+
+.sidebar-menu li:hover{
+    background: #113887;
+}
+
+
+.whether{
+
+    margin-top: 30px;
+
+    text-align: center;
+
+}
+
+.kurs{
+
+    margin-top: 30px;
+    text-align: center;
+
+    /*border: 1px solid black;*/
+    padding: 4px;
+
+}
+
+
+/* картинки */
+
+img{
+border-radius: 3px;
+}
+
+img:hover{
+    opacity: 0.9;
+}
+
+/* контент */
+
+.content{
+    width: calc(100% - 270px);
+    margin-left: 20px;
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: space-between;
+}
+
+.box-text {
+    background: #f3f3f3;
+    border: 1px solid #cdcdcd;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    display: flex;
+    text-align: justify;
+    align-content: space-around;
+}
+
+.box-text:first-child {
+    border: 0 solid transparent;
+    display: inline-block;
+}
+
+.box-text img{
+    margin-right: 10px;
+    width: 300px;
+    height: 200px;
+}
+
+.content h2 {
+    color: #525252;
+    font-family:   arial, 'Satisfy', 'Montserrat', 'Roboto', cursive;
+}
+
+.content p {
+    font-size: 14px;
+    font-family: 'Roboto', 'Montserrat', 'Satisfy', cursive;
+    color:#525252;
+    margin: 10px 10px;
+}
+
+.content h1{
+    color:#525252;
+    margin: 5px 0;
+    text-align: center;
+}
+
+/* .............................
+FOOTER
+........................... */
+
+
+.footer {
+    background-color: #144ab6;
+    color: #ffffff;
+    height: 110px;
+}
+
+.footer p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+p.footer__name {
+    font-size: 28px;
+    margin-bottom: 10px;
+    line-height: normal;
+    font-family: 'Merriweather', serif;
+}
+
+p.footer__social {
+    color: #FFF;
+    margin-bottom: 10px;
+}
+
+p.footer__social-icons {
+    color: #FFF;
+    font-size: 32px;
+ }
+
+p.footer__social-icons a {
+    text-decoration: none;
+    margin-right: 30px;
+    transition: 0.5s ease-out;
+}
+
+
+p.footer__social-icons a[href*="instagram.com"] {
+    color: #bc2a8d;
+}
+
+p.footer__social-icons a[href*="facebook.com"]  {
+    color: #b1b9e2;
+}
+
+p.footer__social-icons a[href*="vk.com"] {
+    color: #b1b9e2;
+}
+
+p.footer__social-icons a[href*="ok.ru"] {
+    color: #ed812b;
+}
+
+
+p.footer__social-icons a:last-child {
+    margin-right: 0px;
+}
+
+p.footer__social-icons a:hover {
+    color: #c4ae18;
+    transform: scale(1.1);
+}
+
+
+.button {
+    font-weight: 700;
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 1.6px;
+    display: inline-block;
+    border-width: 2px;
+    border-color: #FFF;
+    border-style: solid;
+    border-radius: 50px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 23px;
+    padding-right: 23px;
+    margin-bottom: 13px;
+
+    transition: 0.5s ease-out;
+}
+
+.button:hover {
+   background: #113887;
+   transform: scale(1.1);
+}
+
+
+.cont_foot{
+    height: 100%;
+ }
+
+
+.row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 100%;
+    align-items: center;
+}
+
+
+
+.col-4 p{
+    text-align: center;
+}
+
+
+/*/////Вкладка история пряника/////////*/
+
+
+article{
+    margin-top: -20px;
+    background-color: #e1f6ff;
+    background-image: url("Pictures/binding-dark.png");
+    text-align: justify;
+}
+
+article h1, article p, article ul {
+
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+
+.button-back {
+    font-weight: 700;
+    text-decoration: none;
+    color: #0052C2;
+    text-transform: uppercase;
+    letter-spacing: 1.6px;
+    display: inline-block;
+    border-width: 2px;
+    border-color: #0052C2;
+    border-style: solid;
+    border-radius: 10px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 23px;
+    padding-right: 23px;
+    margin-bottom: 13px;
+    transition: 0.4s ease-out;
+    background-color: #96ced9;
+}
+
+.button-back:hover {
+    color: #fff;
+    background-color: #061634;
+}
+
+
+.button_div{
+    text-align: center;
+}
+
+
+/*/////Вкладка Рецепты/////////*/
+
+.container-1 {
+    display: flex;
+    align-items: stretch;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.box{
+    width: calc(90vw / 5);
+    padding-left: 20px;
+}
+
+.box img{
+    width: calc(90vw / 5);
+
+}
+
+.box img:hover{
+    opacity: 0.9;
+   }
+
+.box p{
+    margin: 10px 0 10px 0;
+    padding: 10px 0 10px 10px;
+}
+
+
+/*/////Вкладка Gallery/////////*/
+
+
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+    width: 800px;
+    position: relative;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 5px solid lightgrey;
+    padding: 15px;
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text_G {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+.boxdots{
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+
+
+
+
+
+/* Контакты */
+
+
+#CommonBlock{
+
+    margin: 15px 10px 0 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+
+
+.block-1 h1, .block-2 h1 {
+    font-family:  'Satisfy', 'Montserrat', 'Roboto', cursive, arial;
+}
+
+
+.block-1 p, .block-2 p {
+    font-family:  'Roboto', 'Montserrat', 'Satisfy', cursive;
+}
+
+
+span.tel{
+    color: #c94146;
+    font-size: 1.2em;
+
+    font-weight: 400;
+}
+
+
+
+
+
+
+
+
+

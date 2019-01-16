@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Gallery</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="script.js"></script>
+
+</head>
+<body>
+
+
+<div class="wrapper">
+
+
+    <div class="header">
+
+
+        <ul class="top-menu">
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="Gallery.html">Галлерея</a>
+
+                <ul id="kind">
+                    <li><a href="Gallery.html">Новогодние пряники</a></li>
+                    <li><a href="Gallery.html">Подарочные пряники</a></li>
+                    <li><a href="Gallery.html">Национальные пряники</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Заказ</a></li>
+            <li><a href="#">Доставка</a></li>
+            <li><a href="contacts.html">Контакты</a></li>
+        </ul>
+
+
+        <div class="img_head"></div>
+    </div>
+
+    <!-- The dots/circles -->
+    <div class="boxdots" style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+    </div>
+
+
+    <!-- Slideshow container -->
+    <div class="slideshow-container">
+
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade">
+            <div class="numbertext">1 / 5</div>
+            <img src="Gallery/cake2.jpg" style="width:100%">
+            <div class="text_G">Caption Text</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">2 / 5</div>
+            <img src="Gallery/cake3.jpg" style="width:100%">
+            <div class="text_G">Caption Two</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">3 / 5</div>
+            <img src="Gallery/cake4.jpg" style="width:100%">
+            <div class="text_G">Caption Three</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">4 / 5</div>
+            <img src="Gallery/cake1.jpg" style="width:100%">
+            <div class="text_G">Caption Three</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">5 / 5</div>
+            <img src="Gallery/cake6.jpg" style="width:100%">
+            <div class="text_G">Caption Three</div>
+        </div>
+
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+
+
+    <div class="button_div">
+
+        <a href="index.html" class="button-back">&larr; Вернуться на главную</a>
+
+    </div>
+
+
+    <div class="footer">
+
+        <div class="cont_foot">
+
+            <div class="row">
+                <div class="col-4">
+                    <p class="footer__name">© Made from Belarus</p>
+                    <p>HTML верстка и разработка сайтов</p>
+
+                </div>
+                <div class="col-4">
+                    <p class="footer__social">Профили в социальных сетях:</p>
+
+                    <p class="footer__social-icons">
+
+                        <a href="https://vk.com" target="_blank">
+                            <i class="fa fa-vk" aria-hidden="true"></i>
+                        </a>
+
+                        <a href="https://facebook.com" target="_blank">
+                            <i class="fa fa-facebook" aria-hidden="true"></i>
+                        </a>
+
+                        <a href="https://instagram.com" target="_blank">
+                            <i class="fa fa-instagram" aria-hidden="true"></i>
+                        </a>
+
+                        <a href="https://ok.ru" target="_blank">
+                            <i class="fa fa-odnoklassniki" aria-hidden="true"></i>
+                        </a>
+
+                    </p>
+
+                </div>
+                <div class="col-4">
+                    <div> <a href="https://vk.com" class="button" target="_blank">связаться ВКОНТАКТЕ</a></div>
+                    <p>Напишите мне, чтобы заказать или узнать<br> стоимость Вашего заказа
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<script src="script.js"></script>
+
+
+</body>
+</html>
