@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contacts</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="zakaz.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+<div class="header">
+    <ul class="top-menu">
+        <li><a href="index.html">Главная</a></li>
+        <!--<li><a href="Gallery.html">Галлерея</a>-->
+        <li><a href="Torts.html">Торты</a></li>
+        <li><a href="#">Пряники</a>
+
+            <ul id="kind">
+                <li><a href="Gallery.html">Пряники ручной работы</a></li>
+                <li><a href="Gallery.html">Новогодние пряники</a></li>
+                <li><a href="Gallery.html">Национальные пряники</a></li>
+            </ul>
+        </li>
+        <li><a href="zakaz.html">Заказ</a></li>
+        <!--   <li><a href="#">Доставка</a></li>  -->
+        <li><a href="contacts.html">Контакты</a></li>
+    </ul>
+
+
+    <div class="img_head"></div>
+</div>
+
+
+
+
+<article class="container">
+
+    <form action="" method="post" enctype="multipart/form-data">
+
+        <div class="boxZ">
+            <input required type="text" placeholder=" Иван" id="f_name" name="chose">
+            <label for="f_name">Фамилия</label>
+        </div>
+
+        <div class="boxZ">
+            <input required type="text" placeholder=" Иванов" id="l_name"  name="chose">
+            <label for="l_name">Имя</label>
+        </div>
+
+        <div class="boxZ">
+            <input type="text" placeholder=" Иванович" id="s_name" name="chose">
+            <label for="s_name">Отчество</label>
+        </div>
+
+        <div class="boxZ">
+            <input type="date" value="mm/dd/yyyy" id="Bdate"  name="chose" required >
+            <label for="Bdate">Дата получения</label>
+        </div>
+
+
+
+        <div class="boxZ">
+            <input required id="E-mail" name="chose" type="email" maxlength="22" placeholder=" e-mail-adress@gmail.com">
+            <label for="E-mail">E-mail</label>
+              </div>
+
+        <div class="boxZ">
+            <input  required name="chose" id="phone" type="tel" placeholder=" +375293333333" pattern="+\d+">
+            <label for="phone">Телефон</label>
+        </div>
+
+
+
+
+        <div class="boxZ">
+            <textarea required name="chose" id="text" cols="20" rows="4" placeholder=""></textarea>
+            <label for="text">Заказ товара</label>
+        </div>
+
+
+
+        <div class="boxZ">
+            <div class="box1">
+                <button type="submit">Отправить</button>
+            </div>
+        </div>
+
+    </form>
+
+
+
+
+
+</article>
+
+
+
+
+
+<div class="footer">
+
+    <div class="cont_foot">
+
+        <div class="row">
+            <div class="col-4">
+                <p class="footer__name">© Made from Belarus</p>
+                <p>HTML верстка и разработка сайтов</p>
+
+            </div>
+            <div class="col-4">
+                <p class="footer__social">Профили в социальных сетях:</p>
+
+                <p class="footer__social-icons">
+
+                    <a href="https://vk.com" target="_blank">
+                        <i class="fa fa-vk" aria-hidden="true"></i>
+                    </a>
+
+                    <a href="https://facebook.com" target="_blank">
+                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                    </a>
+
+                    <a href="https://instagram.com" target="_blank">
+                        <i class="fa fa-instagram" aria-hidden="true"></i>
+                    </a>
+
+                    <a href="https://ok.ru" target="_blank">
+                        <i class="fa fa-odnoklassniki" aria-hidden="true"></i>
+                    </a>
+
+                </p>
+
+            </div>
+            <div class="col-4">
+                <div> <a href="https://vk.com" class="button" target="_blank">связаться ВКОНТАКТЕ</a></div>
+                <p>Напишите мне, чтобы заказать или узнать<br> стоимость Вашего заказа
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+
+</html>

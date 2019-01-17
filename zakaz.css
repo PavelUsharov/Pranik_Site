@@ -1,0 +1,101 @@
+
+
+span{
+    text-decoration: underline;
+    color: red;
+}
+
+sup{
+    color:red
+}
+
+textarea{
+    resize: vertical;
+}
+
+h1{
+    text-align: center;
+}
+
+input[placeholder]{
+    font-style: italic;
+}
+
+button{
+    margin-left: 0;
+    padding-left: 0;
+    width: 50%;
+    background: lightseagreen;
+    position: relative;
+    margin-right: 53%;
+    color: white;
+    border-radius: 5px;
+    border: 1px solid lightblue;
+}
+
+
+article{
+
+    display: flex;
+    flex: 1 1 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+article form{
+
+    width: 70%;
+    /*background: lightblue;*/
+}
+
+input[name="chose"], textarea[name="chose"], select[name="chose"] {
+    position: relative;
+    margin-left: 1%;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+    width: 70%;
+    min-width: 300px;
+    max-width: 80%;
+    border: 1px solid blue;
+    order: 2;
+}
+
+
+fieldset {
+    box-sizing: border-box;
+    position: relative;
+    margin-bottom: 15px;
+    width: 70%;
+    min-width: 300px;
+    max-width: 80%;
+    border: 1px solid blue;
+}
+
+.box1 {
+    margin-left: 1%;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+    width: 70%;
+    min-width: 300px;
+    max-width: 80%;
+}
+
+.boxZ {
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+
+[required] ~ label:after {
+    content: "*";
+    color: red;
+}
+
+
+
+#agreement{
+    margin-left: -1px;
+}
+
